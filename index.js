@@ -1,5 +1,14 @@
 const foodSection= document.querySelector(".foods");
 
+const input = document.querySelector(".searchInput");
+
+input.addEventListener("keypress", (event)=>{
+  console.log(event.key);
+  if(event.key == 'Enter'){
+    fetchSearch();
+  }
+})
+
 let foodsHtml = ``;
 
 

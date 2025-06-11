@@ -42,7 +42,16 @@ select{
 
 .searchBtn{
   padding: 5px 15px;
+  margin-top: 10px;
   height: 40px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.39);
+}
+
+.searchBtn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.1s ease-in-out;
 }
 
 .foods{
@@ -51,6 +60,8 @@ select{
   padding: 6px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .foodContainer{
