@@ -32,7 +32,7 @@ async function fetchData(){
         <p class="healthy">Healthy: <span>${food.healthy ? "Yes" : "No"}</span></p>
         <p class="Nutrients">Nutrients: <span>${food.nutrients}</span> </p>
         <p class="amount">Cost: <span> GHC ${(food.amount/100).toFixed(2)}</span></p>
-        <a href="${food.name}">Check out Ingredients and Recipe</a>
+        <a href="recipe.html">Check out Ingredients and Recipe</a>
       </div>
         `;
 
