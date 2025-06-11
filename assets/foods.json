@@ -1,0 +1,41 @@
+
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Fufu",
+      "consumedWith": "Soup",
+      "nutrients": "Carbohydrates",
+      "amount": 20000,
+      "healthy": true,
+      "ingredients": ["cassava", "plantain", "Salt", "Water"]
+    },
+    {
+      "id": 2,
+      "name": "Rice",
+      "consumedWith": "Stew",
+      "nutrients": "Carbohydrates",
+      "amount": 8000,
+      "healthy": true,
+      "ingredients": ["Rice", "Oinion","Oil", "Salt", "Water"]
+    },
+    {
+      "id": 3,
+      "name": "Banku",
+      "consumedWith": "Okro Stew",
+      "nutrients": "Carbohydrates",
+      "amount": 12000,
+      "healthy": true,
+      "ingredients": ["Rice", "Oinion","Oil", "Salt", "Water"]
+    },
+    {
+      "id": 4,
+      "name": "Banku",
+      "consumedWith": "Soup",
+      "nutrients": "Carbohydrates",
+      "amount": 15000,
+      "healthy": true,
+      "ingredients": ["Rice", "Oinion","Oil", "Salt", "Water"]
+    }
+  ]
+}
