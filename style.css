@@ -67,10 +67,11 @@ select{
 .foodContainer{
   /* border: 1px solid rgb(36, 36, 36); */
   box-shadow: 2px 2px 5px rgb(189, 189, 189);
-  margin: 5px;
+  border-radius: 10px;
   padding: 10px;
   width: 190px;
-  margin-right: 10px;
+  margin-left:12px ;
+  margin-right: 12px;
   margin-bottom: 25px;
 }
 
@@ -80,14 +81,16 @@ select{
 }
 
 p{
-  margin: 2px;
+  margin: 5px;
   padding: 3px;
   font-size: 15px;
 }
 
 
 .foodName{
-  background-color: aqua;
+  background-color: tomato;
+  color: white;
+  margin: 5px;
   width: fit-content;
   padding: 5px 10px;
   border-radius: 5px; 
