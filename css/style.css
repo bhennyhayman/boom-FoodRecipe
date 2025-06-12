@@ -6,10 +6,34 @@
 }
 
 nav{
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(141, 135, 135); 
   height: 80px;
   color: white;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.leftSide, .rightSide{
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.rightSide{
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 50px;
+  align-self: center;
+  margin-top: 5px;
+  color: rgb(31, 32, 31);
+}
+
+.logo{
+  width: 40px;
+  color: white;
+  height: 40px;
 }
 
 h3{
@@ -38,6 +62,9 @@ select{
   margin: 10px;
   width: 350px;
   outline: none;
+  border: none;
+  box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.39);
+  font-size: 13px;
 }
 
 .searchBtn{
@@ -46,12 +73,14 @@ select{
   height: 40px;
   cursor: pointer;
   box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.39);
+   border: none;
 }
 
 .searchBtn:hover{
-  background-color: black;
+  background-color: rgba(0, 255, 0, 0.541);
   color: white;
   transition: 0.1s ease-in-out;
+  border: none;
 }
 
 .foods{
@@ -88,12 +117,20 @@ p{
 
 
 .foodName{
-  background-color: tomato;
+  background-color: green;
   color: white;
   margin: 5px;
   width: fit-content;
   padding: 5px 10px;
   border-radius: 5px; 
+}
+
+.foodCategory{
+  color: tomato;
+}
+
+.foodCountry{
+  color: brown;
 }
 
 
@@ -105,12 +142,16 @@ a{
   all: unset;
   color: blueviolet;
   cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+  display: flex;
+  margin: 5px;
 }
 
 footer{
-  background-color: black;
+  background-color: rgb(141, 135, 135);
   color: white;
-  height: 200px;
+  height: 185px;
 }
 
 h3, .copyR{
