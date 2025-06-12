@@ -54,7 +54,7 @@ function createHtml(food){
 
          <div class="timeCost">
           <p class="time">${food.strCategory}</p>
-          <p class="cost"> <span style="color: lime;">Tags:</span> ${food.strTags}
+          <p class="cost"> <span class="tags">Tags:  ${food.strTags}</span>
           <p>Country: ${food.strArea}</p></span></p>
         </div>
 

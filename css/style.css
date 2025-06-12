@@ -5,8 +5,19 @@
 
 }
 
+.brand{
+  color: white;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.brand:hover {
+  color: #1b4d2e;
+}
+
+
 nav{
-  background-color: rgb(141, 135, 135); 
+  background-color: #2d7d46; 
   height: 80px;
   color: white;
   display: flex;
@@ -149,16 +160,26 @@ a{
 }
 
 footer{
-  background-color: rgb(141, 135, 135);
+  background-color: #2d7d46;
   color: white;
   height: 185px;
 }
 
-h3, .copyR{
+h3{
   align-self: center;
   justify-self: center;
   padding: 20px;
+  color: #55775e;
 }
+
+.copyR, h2{
+  font-size: 1rem;
+  padding-top: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;}
+
 
 .errorMsg{
   color: red;
