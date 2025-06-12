@@ -27,7 +27,7 @@ nav{
   padding-left: 50px;
   align-self: center;
   margin-top: 5px;
-  color: rgb(31, 32, 31);
+  color: color;
 }
 
 .logo{
@@ -166,3 +166,4 @@ h3, .copyR{
   padding: 5px;
   height: 300px;
 }
+

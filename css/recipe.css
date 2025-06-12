@@ -104,7 +104,10 @@ nav{
 
 
 .instructions{
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 15px;
+  line-height: 35px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.144);
+  border-radius: 5px 20px;
+  padding: 20px;
 }
 
