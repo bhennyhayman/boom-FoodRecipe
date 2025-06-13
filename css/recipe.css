@@ -2,6 +2,9 @@ a{
   all: unset;
   cursor: pointer;
 }
+h3{
+  color: white;
+}
 
 .home{
   background-color: white;
@@ -19,6 +22,7 @@ a{
 
 nav{
   justify-content: space-around;
+  color: white;
 }
 
 .foodDetails{
