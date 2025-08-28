@@ -7,12 +7,12 @@
 
 .brand{
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   transition: color 0.2s;
 }
 
 .brand:hover {
-  color: #1b4d2e;
+  color: #73e49e;
 }
 
 
@@ -21,14 +21,13 @@ nav{
   height: 80px;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-left: 20px;
 }
 
-.leftSide, .rightSide{
+.left{
   display: flex;
-  width: 50%;
   align-items: center;
 }
 
@@ -95,23 +94,22 @@ select{
 }
 
 .foods{
-  /* border: 1px solid red; */
-  margin: 7px;
-  padding: 6px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+ margin: auto;
+ padding: 10px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-content: center;
+ gap: 15px;
+ justify-self: center;
+ height: fit-content;
 }
 
 .foodContainer{
-  /* border: 1px solid rgb(36, 36, 36); */
   box-shadow: 2px 2px 5px rgb(189, 189, 189);
   border-radius: 10px;
   padding: 10px;
-  width: 190px;
-  margin-left:12px ;
-  margin-right: 12px;
+  width: 200px;
+  margin: 5px;
   margin-bottom: 25px;
 }
 
@@ -178,7 +176,9 @@ h3{
   margin-top: 10px;
   text-align: center;
   color: #fff;
-  padding: 10px;}
+  padding: 10px;
+ 
+}
 
 
 .errorMsg{
@@ -188,3 +188,10 @@ h3{
   height: 300px;
 }
 
+@media screen and (min-width: 768px) {
+  .foods{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+  }     
+}
