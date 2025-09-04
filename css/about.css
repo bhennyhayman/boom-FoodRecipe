@@ -1,8 +1,12 @@
-.title{
+
+
+@media only screen and (max-width: 600px) {
+
+  .title{
   text-align: center;
   margin: 10px;
   color: teal;
-}
+  }
 
 .mainPage{
   box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.411);
@@ -28,4 +32,6 @@
   font-weight: 400;
   background: rgb(2, 209, 64);
   padding: 10px;
+}
+
 }

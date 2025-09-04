@@ -1,5 +1,6 @@
 
-.mainPage{
+@media only screen and (max-width: 600px) {
+   .mainPage{
   margin: 10px;
   padding: 10px;
 
@@ -98,3 +99,5 @@ input:focus{
   color: red;
   font-size: larger;
 }
+}
+ 
