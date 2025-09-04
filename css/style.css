@@ -1,197 +1,92 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: cursive;
 
-}
-
-.brand{
-  color: white;
-  font-size: 16px;
-  transition: color 0.2s;
-}
-
-.brand:hover {
-  color: #73e49e;
-}
-
-
-nav{
-  background-color: #2d7d46; 
-  height: 80px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-}
-
-.left{
-  display: flex;
-  align-items: center;
-}
-
-.rightSide{
-  justify-content: space-between;
-  padding-right: 50px;
-  padding-left: 50px;
-  align-self: center;
-  margin-top: 5px;
-  color: color;
-}
-
-.logo{
-  width: 40px;
-  color: white;
-  height: 40px;
-}
-
-h3{
+.mainPage{
+  margin: 10px;
   padding: 10px;
-  padding-top: 15px;
-}
 
-.cat{
-  display: flex;
-  padding: 10px;
-  padding-top: 15px;
-}
-
-select{
-  height: 25px;
 }
 
 .theSearch{
   display: flex;
-  justify-self: center;
-  margin: 10px;
+  margin: 5px;
+  justify-content: center;
 }
 
-.searchInput{
-  padding: 10px;
-  margin: 10px;
-  width: 350px;
-  outline: none;
-  border: none;
-  box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.39);
-  font-size: 13px;
+input{
+  padding: 10px 10px;
+  width: 300px;
+  border: 0.5px solid rgba(128, 128, 128, 0.425);
 }
 
 .searchBtn{
-  padding: 5px 15px;
-  margin-top: 10px;
-  height: 40px;
+  padding: 5px 12px;
+  background-color: #28c230;
+  border: none;
+  color: white;
   cursor: pointer;
-  box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.39);
-   border: none;
 }
 
 .searchBtn:hover{
-  background-color: rgba(0, 255, 0, 0.541);
-  color: white;
-  transition: 0.1s ease-in-out;
-  border: none;
+  background: #0d9714 ;
 }
 
+input:focus{
+  outline: 1px solid #28c230;
+  border-radius: 5px;
+}
+
+#heading{
+  text-align: center;
+  margin: 10px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+
 .foods{
- margin: auto;
- padding: 10px;
- display: grid;
- grid-template-columns: 1fr 1fr;
- justify-content: center;
- gap: 15px;
- justify-self: center;
- height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .foodContainer{
-  box-shadow: 2px 2px 5px rgb(189, 189, 189);
-  border-radius: 10px;
-  padding: 10px;
-  width: 200px;
   margin: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: auto;
+  width: 200px;
+  box-shadow: 1px 1px 6px rgba(128, 128, 128, 0.192);
+  border-radius: 5px;
 }
 
 .foodImg{
-  width: 200px;
+  width: 180px;
   height: 200px;
-}
-
-p{
-  margin: 5px;
-  padding: 3px;
-  font-size: 15px;
-}
-
-
-.foodName{
-  background-color: green;
-  color: white;
-  margin: 5px;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 5px; 
-}
-
-.foodCategory{
-  color: tomato;
-}
-
-.foodCountry{
-  color: brown;
-}
-
-
-span{
-  color: green;
-}
-
-a{
-  all: unset;
-  color: blueviolet;
-  cursor: pointer;
-  font-size: 15px;
-  padding: 5px;
   display: flex;
   margin: 5px;
+  border-radius: 5px;
+  justify-content: center;
 }
 
-footer{
-  background-color: #2d7d46;
-  color: white;
-  height: 185px;
+.foodImg:hover{
+  transform: scale(110%);
+  transition: all ease-in-out 0.1s;
 }
 
-h3{
-  align-self: center;
-  justify-self: center;
-  padding: 20px;
-  color: #55775e;
+.foodLink{
+  color: blue;
+  font-size: 14px;
 }
 
-.copyR, h2{
-  font-size: 1rem;
-  padding-top: 20px;
-  margin-top: 10px;
-  text-align: center;
-  color: #fff;
-  padding: 10px;
- 
-}
-
-
-.errorMsg{
-  color: red;
-  margin: 10px;
+.foodName{
   padding: 5px;
-  height: 300px;
 }
 
-@media screen and (min-width: 768px) {
-  .foods{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: center;
-  }     
+.foodCategory, .foodCountry{
+  padding: 2px;
+  margin: 3px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.tag{
+  color: red;
 }

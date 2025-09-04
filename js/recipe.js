@@ -46,36 +46,35 @@ function createHtml(food){
     console.log(ingredientList);
   }
 
-  container.innerHTML = `<div class="foodDetails">
+  container.innerHTML = `
+  <div class="foodDetails">
       <h3 class="heading">Recipe for ${food.strMeal}</h3>
 
       <div class="imgBox">
          <img class="foodImage" src="${food.strMealThumb}" alt="foodImage">
 
-         <div class="timeCost">
-          <p class="time">${food.strCategory}</p>
-          <p class="cost"> <span class="tags">Tags:  ${food.strTags}</span>
-          <p>Country: ${food.strArea}</p></span></p>
+         <div class="details">
+          <p class="cat"><span class="tag">Category:</span> ${food.strCategory} </p>
+          <p class="cost"> <span class="tag">Tags: </span> ${food.strTags}
+          <p><span class="tag">Country: </span> ${food.strArea}</p></p>
         </div>
 
-      </div>
+  </div>
      
-      <div class="ingredientsSection">
-        <span class="heading2">Ingredients</span></div>
-        <div class="ingredientBox">
-          <div class="item">
-            <p class="ingredient">
-            ${ingredientList.join("")}
-            </p>
-          </div>
-        </div>
+    <div class="ingredientsSection">
+      <h4> Ingredients </h4>
+      <div class="ingredients">
+           ${ingredientList.join('')}
+      </div>
+    </div>
+    
       
-      <p class="instructionsBox">
-        <span class="heading2">Instructions</span> 
-        <div class="instructions">
+    <div class="instructionsBox">
+      <h4>Instructions</h4> 
+      <div class="instructions">
            ${food.strInstructions}
-        </div>
+      </div>
        
-      </p>
-    </div>`;
+    </div>
+    `;
 }

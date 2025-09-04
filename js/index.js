@@ -14,7 +14,7 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-fetchData();;
+fetchData();
 
 async function fetchData(){
 
@@ -42,11 +42,11 @@ function displayFood(food){
        <img class="foodImg" src="${food.strMealThumb}" alt="food">
       <p class="foodName">${food.strMeal}</p>
       <div>
-      <p class="foodCategory">Category: ${food.strCategory}</p>
-      <p class="foodCountry">Country: ${food.strArea}</p>
+      <p class="foodCategory"> <span class="tag">Category: </span> ${food.strCategory}</p>
+      <p class="foodCountry"><span class="tag">Country: </span>${food.strArea}</p>
       </div>
     
-      <a href="recipe.html?id=${food.idMeal}">Check out Ingredients and Recipe</a>
+      <a href="recipe.html?id=${food.idMeal}" class="foodLink">Check out Ingredients and Recipe</a>
      </div>`;
   }
   
