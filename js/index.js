@@ -56,7 +56,6 @@ function displayFood(food){
 
 function searchData(){
   const searchValue = input.value.trim().toLowerCase();
-  console.log(searchValue);
 
   if (searchValue === "") {
     input.placeholder= "PLEASE ENTER A FOOD NAME";
@@ -74,8 +73,6 @@ async function fetchSearchData() {
       const data = await response.json();
 
       const foods = data.meals;
-      console.log(foods);
-
       displayFood(foods[0]);
     } catch (error) {
       console.error(error);

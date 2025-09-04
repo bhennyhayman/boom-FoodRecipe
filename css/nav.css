@@ -43,9 +43,11 @@ footer{
   color: white;
   text-align: center;
   padding: 10px;
+  height: 150px;
   margin-top: 30px;
 }
 
-.copyR,.ref{
+.copyR{
   padding: 5px;
+  margin-top: 20px;
 }
