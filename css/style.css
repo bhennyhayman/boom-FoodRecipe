@@ -90,3 +90,11 @@ input:focus{
 .tag{
   color: red;
 }
+
+.errorMsg{
+  height: 80vh;
+  text-align: center;
+  margin-top: 50px;
+  color: red;
+  font-size: larger;
+}

@@ -2,7 +2,7 @@
 const foods= document.querySelector(".foods");
 const input = document.querySelector(".searchInput");
 const searchBtn = document.querySelector(".searchBtn");
-
+const errorElement = document.querySelector("#error");
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php';
 
 searchBtn.addEventListener("click", searchData);
@@ -23,6 +23,7 @@ async function fetchData(){
         const response = await fetch(url);
         
         const data = await response.json();
+        errorElement.classList.remove("errorMsg");
         displayFood(data.meals[0]);
       }
       
@@ -31,7 +32,8 @@ async function fetchData(){
       console.error(error)
 
       if(error){
-        foods.innerHTML = "<h2 class='errorMsg'> Something went wrong... try again later </h2>"
+        errorElement.innerText = " Something went wrong... try again later";
+        errorElement.classList.add("errorMsg");
       }
     }
 }
@@ -77,7 +79,8 @@ async function fetchSearchData() {
       displayFood(foods[0]);
     } catch (error) {
       console.error(error);
-      foods.innerHTML = "<h2 class='errorMsg'> No results found... </h2>";
+      errorElement.innerText = " No results found... ";
+      errorElement.classList.add("errorMsg");
       input.value = "";
     }
   }
